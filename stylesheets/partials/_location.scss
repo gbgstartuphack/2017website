@@ -1,0 +1,31 @@
+.location {
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+	  	url("../../build/images/location-background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100vw;
+	height: auto;
+	display: inline-block;
+
+	.location-left {
+		width: 90vw;
+		margin: 5vw;
+		float: right;
+		color: $header-light-color;
+		// background-color: rgba(0,0,0,0.4);
+		@include media($desktop) {
+			width: 40vw;
+			margin-right: 10vw;
+		}
+		p {
+			margin: 0 15% $lineheight;
+		}
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	a:hover>span {
+		text-decoration: underline;
+	}
+}

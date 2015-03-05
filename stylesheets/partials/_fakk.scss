@@ -1,0 +1,53 @@
+.FAKK {
+	background-color: $base-dark-background-color;
+	color: $header-light-color;
+	h1 {
+		margin: 0;
+		padding: 1em 0;
+	}
+	.questions-container {
+		width: 50%;
+		margin: auto;
+		padding-bottom: 50px;
+		@include clearfix;
+		div {
+			display: inline-block;
+			width: 45%;
+			margin-bottom: 40px;
+			h3 {
+				text-align: left;
+				margin: 0;
+				margin-bottom: 1em;
+			}
+			h4 {
+				text-align: left;
+				margin: 0;
+				margin-top: 1em;
+			}
+			p {
+				text-align: left;
+				margin: 0;
+				font-size: 0.9em;
+			}
+			a {
+				color: $header-light-color;
+			}
+		}
+		div:nth-child(odd) {
+			float: left;
+			margin-right: 50%;
+		}
+		div:nth-child(even) {
+			float: right;
+			margin-left: 50%;
+		}
+	}	
+	@include media($mobile) {
+		.questions-container {
+			width: 80%;
+			div {
+				width: 100%;
+			}
+		}
+	}
+}

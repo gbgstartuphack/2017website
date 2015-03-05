@@ -1,0 +1,56 @@
+[role="banner"] {
+  @include clearfix;
+  background: linear-gradient(
+  rgba(0, 0, 0, 0.2),
+  rgba(0, 0, 0, 0.2)
+  ), url(../../build/images/header-background.jpg) no-repeat fixed;
+  min-height: 100vh;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+
+  color: $header-color;
+
+
+  .header {
+    @include vertical-align;
+    width: 100vw;
+    .header-logo {
+      width: 90%;
+      max-height: 40vh;
+      opacity: 0;
+      position: relative;
+      left: -5%;
+      @include media($desktop) {
+        width: 50%;
+      }
+    }
+    .header-info {
+      opacity: 0;
+      font-size: 6vmin;
+      margin-top: 0;
+      margin-bottom: 1vh;
+    }
+    .ghost-btn {
+      opacity: 0;
+      padding: 4vmin 8vmin;
+      font-size: 3vmin;
+      //Remove later when the application opens.
+      cursor: default;
+
+      /* &:hover { @include hover; } */
+    }
+    
+  }
+  .arrow {
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4vh;
+  }
+
+}

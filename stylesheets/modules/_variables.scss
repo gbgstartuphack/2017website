@@ -1,0 +1,34 @@
+// Typography
+$default-font:	              "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$default-font-size:           18px;
+$footer-font-size:            16px;
+
+//Colors
+$header-color:                #fff;
+$header-light-color:	        #fdfdfd;
+$base-text-color:             #424242;
+$base-background-color:       #fdfdfd;
+$base-dark-background-color:  #424242;
+
+
+//Size adjustments
+
+$margin-sides:          25%;
+$base-size:			       	15;
+$leading:				        20;
+
+$lineheight:		       	($leading/$base-size) * 1em;
+
+// breakpoints
+$mobile:          new-breakpoint(max-width 480px);
+$people-extra:    new-breakpoint(max-width 600px);
+$mobile-wide:     new-breakpoint(min-width 481px);
+$tablet:          new-breakpoint(min-width 700px);
+$desktop:         new-breakpoint(min-width 850px);
+$desktop-wide:    new-breakpoint(min-width 1280px);
+$widewide:		    new-breakpoint(min-width 1440px);
+
+$height-small:    new-breakpoint(max-height 420px);
+$height-special-case: new-breakpoint(max-height 600px);
+$height-hd:       new-breakpoint(min-height 800px);
+$height-hd2:       new-breakpoint(min-height 900px);

@@ -1,0 +1,19 @@
+.intro {
+
+  h1 {
+    padding-top: 1em;
+  }
+
+  p:last-child {
+    padding-bottom: 8em;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  a:hover>span {
+    text-decoration: underline;
+  }
+  .icon-hashtag {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,86 @@
+.partners {
+	text-align: center;
+	.garden {
+		vertical-align: top;
+		display: inline-block;
+		width: 500px;
+		max-width: 90%;
+		margin: 0 5% 40px 5%;
+		.logo {
+			height: 200px;
+			img {
+				@include vertical-align;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		p {
+			margin: 0 5% 5% 5%;
+		}
+		@include media($mobile) {
+			margin-bottom: 100px;
+		}
+	}
+	.spotify {
+		width: 90vw;
+		p{
+			margin-top: 2em;
+		}
+	}
+	.flower-all {
+		padding-top: 100px;
+		@include media($mobile) {
+			padding-top: 0px;
+		}
+	}
+	.flower {
+		vertical-align: top;
+		display: inline-block;
+		width: 300px;
+		max-width: 90%;
+		margin: 0 5% 100px 5%;
+		.logo {
+			height: 200px;
+			img {
+				@include vertical-align;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		p {
+			margin: 0 5% 5% 5%;
+			font-size: 1em;
+		}
+		@include media($mobile) {
+			margin-bottom: 50px;
+		}
+	}
+	.seed-all {
+		width: 90%;
+		margin: auto;
+		padding-top: 100px;
+		margin-bottom: -100px;
+		@include media($mobile) {
+			padding-top: 50px;
+			margin-bottom: -20px;
+		}
+	}
+	.seed {
+		vertical-align: middle;
+		display: inline-block;
+		width: 200px;
+		max-width: 30%;
+		margin: 0 5% 100px 5%;
+		@include media($mobile) {
+			margin: 0 5% 20px 5%;
+		}
+		.logo {
+			height: 100px;
+			img {
+				@include vertical-align;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.ghost-btn {
+	outline: none;
+	background-color: rgba(255,255,255,0);
+	border: 3px solid rgba(255,255,255,1);
+	border-radius: 10px;
+	padding: 25px 50px;
+	font-size: 1.3em;
+	color: #fff;
+	white-space: nowrap;
+	@include media($mobile) {
+		padding: 20px 40px;
+		font-size: 1.5em;
+	}
+}
+
+@mixin hover {
+	transition: 0.5s;
+	background-color: rgba(255,255,255,0.4);
+	border: 3px solid rgba(255,255,255,0.04);
+}

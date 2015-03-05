@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: em(60);
+  font-family: Pacifico;
+  margin: $lineheight / 2 0;
+}
+
+h2 {
+  font-size: em(28);
+  margin: $lineheight / 2 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: em(16);
+  margin-bottom: $lineheight / 2;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: em(15);
+}
+
+p {
+  font-size: $default-font-size;
+  text-align: center;
+  line-height: 170%;
+  margin: 0 10% $lineheight;
+
+  @include media($desktop){
+    margin: 0 $margin-sides $lineheight;
+  }
+}

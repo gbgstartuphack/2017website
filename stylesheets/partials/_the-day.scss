@@ -1,0 +1,110 @@
+.the-day {
+  color: white;
+  padding: 2% 0;
+  text-align: center;
+  background-color: $base-dark-background-color;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .img-shown {
+    opacity: 1;
+    top: 0;
+  }
+  .img-not-shown {
+    opacity: 0;
+    &:nth-child(odd) {
+      transform: translateY(5%);
+    }
+    &:nth-child(even) {
+      transform: translateY(-5%);
+    }
+  }
+
+  h1{
+    position: relative;
+    margin-top:0;
+    padding-top: 1em;
+  }
+
+  .btn-group {
+    position: relative;
+    min-width: 80%;
+  }
+
+  .ghost-btn {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1em 0 1em;
+    width: 16em;
+    max-width: 80vw;
+    padding-left: 0;
+    padding-right: 0;
+    * {
+    }
+    &:nth-child(odd) {
+      margin-bottom: 1.5em;
+    }
+  }
+  .ghost-btn:not(.active):hover {
+    background-color: rgba(255,255,255,0.05);
+  }
+
+  .active {
+    @include hover;
+  }
+
+  p {
+    // transition: 0.5s, opacity 0.5s;
+    position: relative;
+    text-align: left;
+    margin-top: 3em;
+    padding-bottom: 5em;
+    @include media($desktop){
+      // -moz-column-count: 3;
+      // -moz-column-gap: 50px;
+      // -webkit-column-count: 3;
+      // -webkit-column-gap: 50px;
+      text-align: justify;
+    }
+    &:nth-child(even) {
+      position: absolute;
+    }
+  }
+
+  .text-shown {
+    left: 0;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .text-not-shown {
+    opacity: 0;
+    &:nth-child(odd) {
+      transform: translateX(-3%);
+    }
+    &:nth-child(even) {
+      transform: translateX(3%);
+    }
+  }
+
+
+}
+.background-change {
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.7)
+    ), url(../../build/images/john-hult.png) no-repeat;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+  }

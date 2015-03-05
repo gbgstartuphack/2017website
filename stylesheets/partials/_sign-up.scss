@@ -1,0 +1,71 @@
+.sign-up {
+	@include clearfix;
+	background-color: $base-background-color;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../../build/images/sign-up-background.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100vw;
+	text-align: center;
+	margin-top: -5px;
+	.location-right {
+		width: 90vw;
+		margin: 5vw;
+		float: left;
+		color: $header-light-color;
+		// background-color: rgba(0,0,0,0.4);
+		@include media($desktop) {
+			width: 40vw;
+			margin-left: 10vw;
+		}
+	}
+	h1 {
+		// vertical-align: middle;
+		// display: inline-block;
+		// color: $base-text-color;
+		margin: 0;
+		// padding: 3em 1em;
+		@include media($mobile) {
+			font-size: 2em;
+		}
+		@include media($mobile-wide) {
+			font-size: 3em;
+		}
+		@include media($tablet) {
+			font-size: 5em;
+		}
+	}
+	p {
+		margin: 0 15% $lineheight;
+	}
+	i {
+		font-size: 2em;
+		vertical-align: middle;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	a:hover>span {
+		text-decoration: underline;
+	}
+}
+
+// .sign-up:hover h1{
+// 	animation: heartbeat 1.5s linear infinite;
+// }
+
+// @keyframes heartbeat {
+//     5% {
+//     	transform: scale(1.02, 1.02);
+//     }
+
+//     15% {
+//     	transform: scale(1.01, 1.01);
+//     }
+
+//     20% {
+//     	transform: scale(1.02, 1.02);
+//     }
+
+//     35% {
+//     	transform: scale(1, 1);
+//     }
+// }
