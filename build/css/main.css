@@ -941,7 +941,7 @@ a:hover {
   text-decoration: underline; }
 
 .ocean-break {
-  background: #000 url(../../build/images/ocean-break-background.png) no-repeat;
+  background: #000 url(../../build/images/ocean-break-background.jpg) no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100vw;
@@ -1034,13 +1034,6 @@ a:hover {
       -webkit-transform: translateX(3%);
           -ms-transform: translateX(3%);
               transform: translateX(3%); }
-
-.background-change {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../../build/images/john-hult.png) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../../build/images/john-hult.png) no-repeat;
-  width: 100vw;
-  background-size: cover;
-  background-position: center center; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
@@ -1321,8 +1314,8 @@ footer {
     text-decoration: underline; }
 
 .location {
-  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background.png");
-  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background.png");
+  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background.jpg");
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
