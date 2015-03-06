@@ -809,10 +809,24 @@ a:hover {
   margin: 0 20% 5vh; }
 .all .a-hackathon {
   width: 70%;
-  margin: auto; }
+  margin: auto;
+  text-align: center; }
+  .all .a-hackathon img {
+    max-width: 50vw; }
+  .all .a-hackathon .center section {
+    width: 20%;
+    margin: 0 5vw 10vh;
+    display: inline-block; }
+    .all .a-hackathon .center section img {
+      max-width: 100%; }
+  .all .a-hackathon .products section {
+    margin-bottom: 1vh; }
 .all .why-sponsor {
   width: 70%;
-  margin: auto; }
+  margin: auto;
+  text-align: center; }
+  .all .why-sponsor img {
+    max-width: 50vw; }
 .all .garden-columns {
   width: 70%;
   margin: auto;
@@ -822,26 +836,20 @@ a:hover {
   width: 50%;
   float: left; }
 .all .garden-right {
-  width: 50%; }
-.all .flower-price ul {
-  padding: 0;
-  margin-left: 20%;
-  padding-right: 10%; }
-@media screen and (min-width: 1200px) {
-  .all .flower-price {
-    padding-left: 15%;
-    padding-right: 5%; } }
-.all .seed-price p {
-  text-align: center; }
-.all .seed-price ul {
-  padding: 0;
-  margin-left: 20%; }
-@media screen and (min-width: 1200px) {
-  .all .seed-price {
-    padding-right: 15%;
-    padding-left: 5%; } }
+  width: 50%;
+  float: right; }
+.all .flower {
+  width: 30%;
+  margin: auto; }
+.all .seed {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 10vh; }
+  .all .seed p {
+    text-align: center; }
 .all .sponsor-us {
   width: 100%;
+  background-color: #424242;
   color: #e1e1e1;
   padding: 5em 25%; }
   .all .sponsor-us h1 {
@@ -849,12 +857,23 @@ a:hover {
   @media screen and (max-width: 700px) {
     .all .sponsor-us h2 {
       word-break: break-word; } }
+.all .the-sponsors {
+  text-align: center; }
+  .all .the-sponsors h2 {
+    display: inline-block;
+    max-width: 20vw;
+    margin: 0 5vw 5vh; }
+    .all .the-sponsors h2 img {
+      max-width: 100%;
+      max-height: 10vh; }
 .all .gradient-transition {
   height: 30px;
   width: 100%;
   background: -webkit-linear-gradient(#FDFDFD, #FEFFFA);
-  background: linear-gradient(#FDFDFD, #FEFFFA); }
+  background: linear-gradient(#FDFDFD, #FEFFFA);
+  text-align: left; }
   .all .gradient-transition h2 {
+    display: block;
     width: 100%;
     text-align: left;
     font-size: 3vw;

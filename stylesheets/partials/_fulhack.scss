@@ -1,16 +1,41 @@
 .all {
+	
 	p {
 		text-align: justify;
 		margin: 0 20% 5vh;
 	}
+
 	.a-hackathon {
 		width: 70%;
 		margin: auto;
+		text-align: center;
+		img {
+			max-width: 50vw;
+		}
+		.center {
+			section {
+				width: 20%;
+				margin: 0 5vw 10vh;
+				display: inline-block;
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+		.products {
+			section {
+				margin-bottom: 1vh;
+			}
+		}
 	}
 
 	.why-sponsor {
 		width: 70%;
 		margin: auto;
+		text-align: center;
+		img {
+			max-width: 50vw;
+		}
 	}
 
 	.garden-columns {
@@ -27,37 +52,26 @@
 
 	.garden-right {
 		width: 50%;
+		float: right;
 	}
 
-	.flower-price {
-		ul {
-			padding: 0;
-			margin-left: 20%;
-			padding-right: 10%;
-		}
-		@media screen and (min-width: 1200px) {
-			padding-left: 15%;
-			padding-right: 5%;
-		}
+	.flower {
+		width: 30%;
+		margin: auto;
 	}
 
-	.seed-price {
+	.seed {
+		width: 30%;
+		margin: auto;
+		margin-bottom: 10vh;
 		p {
 			text-align: center;
-		}
-		ul {
-			padding: 0;
-			margin-left: 20%;
-		}
-		@media screen and (min-width: 1200px) {
-			padding-right: 15%;
-			padding-left: 5%;
 		}
 	}
 
 	.sponsor-us {
 		width: 100%;
-		// background-color: $gray;
+		background-color: #424242;
 		color: #e1e1e1;
 		padding: 5em 25%;
 		h1 {
@@ -69,12 +83,26 @@
 			}
 		}
 	}
+	.the-sponsors {
+		text-align: center;
+		h2 {
+			display: inline-block;
+			max-width: 20vw;
+			margin: 0 5vw 5vh; 
+			img {
+				max-width: 100%;
+				max-height: 10vh;
+			}
+		}
+	}
 
 	.gradient-transition {
 		height: 30px;
 		width: 100%;
 		background: linear-gradient(#FDFDFD, #FEFFFA);
+		text-align: left;
 		h2 {
+		display: block;
 			width: 100%;
 			text-align: left;
 			font-size: 3vw;
