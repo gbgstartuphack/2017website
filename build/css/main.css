@@ -821,6 +821,8 @@ a:hover {
       max-width: 100%; }
   .all .a-hackathon .products section {
     margin-bottom: 1vh; }
+  .all .a-hackathon .products p {
+    text-align: center; }
 .all .why-sponsor {
   width: 70%;
   margin: auto;
