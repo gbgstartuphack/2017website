@@ -1,11 +1,18 @@
 .partners {
 	text-align: center;
+	h1 {
+		margin-bottom: 0;
+	}
+	h2 {
+		margin-top: 0;
+		margin-bottom: 10vh;
+	}
 	.garden {
 		vertical-align: top;
 		display: inline-block;
 		width: 500px;
 		max-width: 90%;
-		margin: 0 5% 40px 5%;
+		margin: 0 5% 40px;
 		.logo {
 			height: 200px;
 			img {
@@ -15,7 +22,7 @@
 			}
 		}
 		p {
-			margin: 0 5% 5% 5%;
+			margin: 0 5% 5vh;
 		}
 		@include media($mobile) {
 			margin-bottom: 100px;
@@ -38,7 +45,7 @@
 		display: inline-block;
 		width: 300px;
 		max-width: 90%;
-		margin: 0 5% 100px 5%;
+		margin: 0 5% 100px;
 		.logo {
 			height: 200px;
 			img {
@@ -48,7 +55,7 @@
 			}
 		}
 		p {
-			margin: 0 5% 5% 5%;
+			margin: 0 5% 5vh;
 			font-size: 1em;
 		}
 		@include media($mobile) {
@@ -63,6 +70,10 @@
 		@include media($mobile) {
 			padding-top: 50px;
 			margin-bottom: -20px;
+		}
+
+		h2 {
+			margin: 10vh 0 2vh;
 		}
 	}
 	.seed {

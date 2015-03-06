@@ -6,6 +6,7 @@
   width: 100vw;
   position: relative;
   overflow: hidden;
+  padding-bottom: 5vw;
 
   img {
     position: absolute;
@@ -65,22 +66,18 @@
     @include hover;
   }
 
-  p {
-    // transition: 0.5s, opacity 0.5s;
+  .the-day-text {
     position: relative;
-    text-align: left;
-    margin-top: 3em;
-    padding-bottom: 5em;
-    @include media($desktop){
-      // -moz-column-count: 3;
-      // -moz-column-gap: 50px;
-      // -webkit-column-count: 3;
-      // -webkit-column-gap: 50px;
-      text-align: justify;
-    }
     &:nth-child(even) {
       position: absolute;
     }
+    p {
+      text-align: left;
+      @include media($desktop){
+        text-align: justify;
+      }
+    }
+    
   }
 
   .text-shown {
