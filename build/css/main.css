@@ -804,6 +804,97 @@ a:hover {
       padding: 20px 40px;
       font-size: 1.5em; } }
 
+.all p {
+  text-align: justify;
+  margin: 0 20% 5vh; }
+.all .a-hackathon {
+  width: 70%;
+  margin: auto; }
+.all .why-sponsor {
+  width: 70%;
+  margin: auto; }
+.all .garden-columns {
+  width: 70%;
+  margin: auto;
+  margin-left: 20%;
+  display: inline-block; }
+.all .garden-left {
+  width: 50%;
+  float: left; }
+.all .garden-right {
+  width: 50%; }
+.all .flower-price ul {
+  padding: 0;
+  margin-left: 20%;
+  padding-right: 10%; }
+@media screen and (min-width: 1200px) {
+  .all .flower-price {
+    padding-left: 15%;
+    padding-right: 5%; } }
+.all .seed-price p {
+  text-align: center; }
+.all .seed-price ul {
+  padding: 0;
+  margin-left: 20%; }
+@media screen and (min-width: 1200px) {
+  .all .seed-price {
+    padding-right: 15%;
+    padding-left: 5%; } }
+.all .sponsor-us {
+  width: 100%;
+  color: #e1e1e1;
+  padding: 5em 25%; }
+  .all .sponsor-us h1 {
+    margin-top: 0; }
+  @media screen and (max-width: 700px) {
+    .all .sponsor-us h2 {
+      word-break: break-word; } }
+.all .gradient-transition {
+  height: 30px;
+  width: 100%;
+  background: -webkit-linear-gradient(#FDFDFD, #FEFFFA);
+  background: linear-gradient(#FDFDFD, #FEFFFA); }
+  .all .gradient-transition h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 3vw;
+    color: #e1e1e1;
+    position: relative;
+    top: 200px;
+    margin: 5px 0; }
+  .all .gradient-transition h2 span {
+    padding-left: 10vw;
+    padding-right: 1vw;
+    background-color: rgba(0, 0, 0, 0.5); }
+.all .finish {
+  width: 100%;
+  height: 700px;
+  overflow: hidden; }
+  .all .finish img {
+    min-height: 670px;
+    min-width: 1005px;
+    width: auto; }
+.all .hackathon-intro {
+  margin-bottom: 5em; }
+.all .featured-in {
+  margin-top: 3em; }
+.all .works {
+  margin-top: 1.5em; }
+.all .brag {
+  font-size: 1.5em; }
+.all .sponsorship-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+  .all .sponsorship-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
 .intro h1 {
   padding-top: 1em; }
 .intro p:last-child {

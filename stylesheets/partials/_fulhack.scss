@@ -1,0 +1,132 @@
+.all {
+	p {
+		text-align: justify;
+		margin: 0 20% 5vh;
+	}
+	.a-hackathon {
+		width: 70%;
+		margin: auto;
+	}
+
+	.why-sponsor {
+		width: 70%;
+		margin: auto;
+	}
+
+	.garden-columns {
+		width: 70%;
+		margin: auto;
+		margin-left: 20%;
+		display: inline-block;
+	}
+
+	.garden-left {
+		width: 50%;
+		float: left;
+	}
+
+	.garden-right {
+		width: 50%;
+	}
+
+	.flower-price {
+		ul {
+			padding: 0;
+			margin-left: 20%;
+			padding-right: 10%;
+		}
+		@media screen and (min-width: 1200px) {
+			padding-left: 15%;
+			padding-right: 5%;
+		}
+	}
+
+	.seed-price {
+		p {
+			text-align: center;
+		}
+		ul {
+			padding: 0;
+			margin-left: 20%;
+		}
+		@media screen and (min-width: 1200px) {
+			padding-right: 15%;
+			padding-left: 5%;
+		}
+	}
+
+	.sponsor-us {
+		width: 100%;
+		// background-color: $gray;
+		color: #e1e1e1;
+		padding: 5em 25%;
+		h1 {
+			margin-top: 0;
+		}
+		h2 {
+			@media screen and (max-width: 700px) {
+				word-break: break-word;	
+			}
+		}
+	}
+
+	.gradient-transition {
+		height: 30px;
+		width: 100%;
+		background: linear-gradient(#FDFDFD, #FEFFFA);
+		h2 {
+			width: 100%;
+			text-align: left;
+			font-size: 3vw;
+			color: #e1e1e1;
+			position: relative;
+			top: 200px;
+			margin: 5px 0;
+		}
+		h2 span {
+			padding-left: 10vw;
+			padding-right: 1vw;
+			background-color: rgba(0,0,0,0.5);
+		}
+	}
+	.finish {
+		width: 100%;
+		height: 700px;
+		overflow: hidden;
+		img {
+			min-height: 670px;
+			min-width: 1005px;
+			width: auto;
+		}
+	}
+
+	.hackathon-intro {
+		margin-bottom: 5em;
+	}
+
+	.featured-in {
+		margin-top: 3em;
+	}
+
+	.works {
+		margin-top: 1.5em;
+	}
+
+	.brag {
+		font-size: 1.5em;
+	}
+
+	.sponsorship-video {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
