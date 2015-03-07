@@ -28,4 +28,18 @@
 	a:hover>span {
 		text-decoration: underline;
 	}
+	.location-image-holder {
+		width: 355px;
+		margin: auto;
+		* {
+			outline: none;
+		}
+		img {
+			border: 2px solid #000;
+			margin: 0 5px 5px;
+		}
+		@include media($mobile) {
+			width: 200px;
+		}
+	}
 }

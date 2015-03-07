@@ -83,16 +83,6 @@ $(document).ready(function() {
 	  });
 	});
 
-	//Get all stats for last year section
-	// stats = $('.statistics > h3');
-	//Don't show last four pictures in last year section on mobile
-	// var pics = $('.last-year > img');
-	// if(window.innerWidth <= 480) {
-	// 	for(var i = 4; i < pics.length; i++) {
-	// 		pics[i].style.display = 'none';
-	// 	}
-	// }
-
 	//pirallax
 	$(window).bind('scroll',function(e){
    		parallaxScroll();
@@ -143,50 +133,21 @@ $(document).ready(function() {
 		}
 	});
 
-  	//Don't show last four pictures in last year section on resize to small
-	$(window).resize(function() {
-		// if (window.innerWidth <= 480 && pics[4].style.display != 'none') {
-		// 	for(var i = 4; i < pics.length; i++) {
-		// 		pics[i].style.display = 'none';
-		// 	}
-		// }
-		// //show them again if bigger screen
-		// else if (window.innerWidth > 480 && pics[4].style.display == 'none') {
-		// 	for(var i = 4; i < pics.length; i++) {
-		// 		pics[i].style.display = 'inline';
-		// 	}
-		// }
-
-		//Make sure "the day" texts end up on same place
-		var text1y = $('.the-day-text:eq(0)').position().top;
-		$('.the-day-text:eq(1)').css('top', text1y);
+	$('.location-image-holder').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+		}
 	});
 
-	//Count statistics
-	// var statsDone = false;
-	// $(document).on('scroll', function() {
-	// 	if (isScrolledIntoView('.statistics') && !statsDone) {
-	// 		(function countStats(i) {
-	// 			statsDone = true;
-	// 			setTimeout(function () {
-	// 		   		if (i<27) {
-	// 					stats[0].innerHTML=i+1;
-	// 				}
-	// 				if (i<97) {
-	// 					stats[1].innerHTML=i+1;
-	// 				}
-	// 				if (i<1) {
-	// 					stats[2].innerHTML=i+1;
-	// 				}
-	// 				if (i<1014) {
-	// 					stats[3].innerHTML=i+16;
-	// 				}
-	// 				i = ((i <= 97) ? i+2 : i+90);
-	// 				if (i<1014) countStats(i);
-	// 		   	}, 30)
-	// 		})(0);  
-	// 	}
-	// });
 
 	//fix span arrow and float in crew
 	var peoples = $('.people');
@@ -199,6 +160,13 @@ $(document).ready(function() {
 		$('.people span').each(function() {
 			setSpanArrow($(this));
 		});
+	});
+
+	//ON RESIZE
+	$(window).resize(function() {
+		//Make sure "the day" texts end up on same place
+		var text1y = $('.the-day-text:eq(0)').position().top;
+		$('.the-day-text:eq(1)').css('top', text1y);
 	});
 
 });
