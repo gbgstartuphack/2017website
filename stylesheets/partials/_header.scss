@@ -36,12 +36,11 @@
     }
     .ghost-btn {
       opacity: 0;
-      padding: 4vmin 8vmin;
+      padding: 2vmin 4vmin;
       font-size: 3vmin;
-      //Remove later when the application opens.
       cursor: default;
 
-      /* &:hover { @include hover; } */
+      &:hover { @include hover; }
     }
     
   }

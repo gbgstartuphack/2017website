@@ -1485,10 +1485,14 @@ p {
       margin-bottom: 1vh; }
     [role="banner"] .header .ghost-btn {
       opacity: 0;
-      padding: 4vmin 8vmin;
+      padding: 2vmin 4vmin;
       font-size: 3vmin;
-      cursor: default;
-      /* &:hover { @include hover; } */ }
+      cursor: default; }
+      [role="banner"] .header .ghost-btn:hover {
+        -webkit-transition: 0.5s;
+                transition: 0.5s;
+        background-color: rgba(255, 255, 255, 0.4);
+        border: 3px solid rgba(255, 255, 255, 0.04); }
   [role="banner"] .arrow {
     width: 40px;
     position: absolute;
