@@ -1169,6 +1169,28 @@ a:hover {
   margin: 0 auto;
   width: 70%; }
 
+.location-right {
+  width: 50vw;
+  margin: 5vw;
+  float: left;
+  color: #fdfdfd; }
+  @media screen and (min-width: 850px) {
+    .location-right {
+      width: 40vw;
+      margin-left: 10vw; } }
+
+.location-left {
+  width: 50vw;
+  margin: 5vw;
+  float: right;
+  color: #fdfdfd; }
+  @media screen and (min-width: 850px) {
+    .location-left {
+      width: 40vw;
+      margin-right: 10vw; } }
+  .location-left p {
+    margin: 0 15% 1.33333em; }
+
 .ghost-btn {
   outline: none;
   background-color: rgba(255, 255, 255, 0);
@@ -1680,15 +1702,6 @@ footer {
       background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent), url(../../build/images/sign-up-background-mobile.jpg) no-repeat center center;
       background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), transparent), url(../../build/images/sign-up-background-mobile.jpg) no-repeat center center;
       background-size: cover; } }
-  .sign-up .location-right {
-    width: 90vw;
-    margin: 5vw;
-    float: left;
-    color: #fdfdfd; }
-    @media screen and (min-width: 850px) {
-      .sign-up .location-right {
-        width: 40vw;
-        margin-left: 10vw; } }
   .sign-up h1 {
     margin: 0; }
     @media screen and (max-width: 480px) {
@@ -1710,6 +1723,39 @@ footer {
   .sign-up a:hover > span {
     text-decoration: underline; }
 
+.match-up {
+  color: white;
+  background-color: #fdfdfd;
+  background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.4), transparent), url(../../build/images/matchup-background.jpg) no-repeat center center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), transparent), url(../../build/images/matchup-background.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  text-align: center;
+  margin-top: -5px; }
+  .match-up:before, .match-up:after {
+    content: "";
+    display: table; }
+  .match-up:after {
+    clear: both; }
+  @media screen and (max-width: 480px) {
+    .match-up {
+      background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), transparent), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
+      background-size: cover; } }
+  .match-up .location-left {
+    width: 35vw; }
+  .match-up .location-right {
+    width: 35vw; }
+  .match-up .fuck-it {
+    display: inline-block; }
+    .match-up .fuck-it a {
+      text-decoration: none;
+      opacity: 0.8; }
+    .match-up .fuck-it a:hover {
+      opacity: 1; }
+  .match-up i {
+    font-size: 100px; }
+
 .location {
   background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background.jpg");
   background: linear-gradient(-90deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background.jpg");
@@ -1725,17 +1771,6 @@ footer {
       background: linear-gradient(-90deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background-mobile.jpg");
       background-size: cover;
       background-position: center center; } }
-  .location .location-left {
-    width: 90vw;
-    margin: 5vw;
-    float: right;
-    color: #fdfdfd; }
-    @media screen and (min-width: 850px) {
-      .location .location-left {
-        width: 40vw;
-        margin-right: 10vw; } }
-    .location .location-left p {
-      margin: 0 15% 1.33333em; }
   .location a:hover {
     text-decoration: none; }
   .location a:hover > span {

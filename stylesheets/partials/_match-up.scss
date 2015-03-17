@@ -1,0 +1,41 @@
+.match-up {
+	@include clearfix;
+  color: white;
+	background-color: $base-background-color;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../../build/images/matchup-background.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100vw;
+	text-align: center;
+	margin-top: -5px;
+	@include media($mobile) {
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+  .location-left {
+    width: 35vw;
+
+  }
+
+  .location-right {
+    width: 35vw;
+  }
+
+  .fuck-it {
+    display: inline-block;
+
+		a {
+			text-decoration: none;
+			opacity: 0.8;
+		}
+
+		a:hover {
+			opacity: 1;
+		}
+  }
+
+
+  i {
+    font-size: 100px;
+  }
+}

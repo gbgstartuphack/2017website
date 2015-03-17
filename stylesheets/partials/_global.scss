@@ -5,3 +5,30 @@
     margin: 0 auto;
     width: 70%;
 }
+
+.location-right {
+	width: 50vw;
+	margin: 5vw;
+	float: left;
+	color: $header-light-color;
+	// background-color: rgba(0,0,0,0.4);
+	@include media($desktop) {
+		width: 40vw;
+		margin-left: 10vw;
+	}
+}
+
+.location-left {
+  width: 50vw;
+  margin: 5vw;
+  float: right;
+  color: $header-light-color;
+  // background-color: rgba(0,0,0,0.4);
+  @include media($desktop) {
+    width: 40vw;
+    margin-right: 10vw;
+  }
+  p {
+    margin: 0 15% $lineheight;
+  }
+}

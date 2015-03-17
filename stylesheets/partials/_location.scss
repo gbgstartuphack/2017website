@@ -15,20 +15,6 @@
   		background-position: center center;
 	}
 
-	.location-left {
-		width: 90vw;
-		margin: 5vw;
-		float: right;
-		color: $header-light-color;
-		// background-color: rgba(0,0,0,0.4);
-		@include media($desktop) {
-			width: 40vw;
-			margin-right: 10vw;
-		}
-		p {
-			margin: 0 15% $lineheight;
-		}
-	}
 	a:hover {
 		text-decoration: none;
 	}

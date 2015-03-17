@@ -11,17 +11,7 @@
 		background-size: cover;
 	}
 
-	.location-right {
-		width: 90vw;
-		margin: 5vw;
-		float: left;
-		color: $header-light-color;
-		// background-color: rgba(0,0,0,0.4);
-		@include media($desktop) {
-			width: 40vw;
-			margin-left: 10vw;
-		}
-	}
+
 	h1 {
 		// vertical-align: middle;
 		// display: inline-block;
@@ -53,6 +43,8 @@
 	}
 }
 
+
+
 // .sign-up:hover h1{
 // 	animation: heartbeat 1.5s linear infinite;
 // }
@@ -74,3 +66,4 @@
 //     	transform: scale(1, 1);
 //     }
 // }
+//
