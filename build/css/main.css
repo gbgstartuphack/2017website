@@ -1467,8 +1467,9 @@ p {
     clear: both; }
   @media screen and (max-width: 480px) {
     [role="banner"] {
-      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/header-background-mobile.jpg) no-repeat fixed;
-      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/header-background-mobile.jpg) no-repeat fixed;
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/header-background-mobile.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/header-background-mobile.jpg);
+      background-repeat: no-repeat;
       background-size: cover;
       background-position: center center; } }
   [role="banner"] .header {
