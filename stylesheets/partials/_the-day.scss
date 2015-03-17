@@ -33,6 +33,12 @@
     }
   }
 
+  .hack-background {
+    @include media($mobile) {
+      content: url(../../build/images/the-hack-background-mobile.jpg);
+    }
+  }
+
   h1{
     position: relative;
     margin-top:0;
@@ -47,7 +53,7 @@
   .ghost-btn {
     display: inline-block;
     vertical-align: top;
-    margin: 0 1em 0 1em;
+    margin: 0 1em 1.5em 1em;
     width: 16em;
     max-width: 80vw;
     padding-left: 0;

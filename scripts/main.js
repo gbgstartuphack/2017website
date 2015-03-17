@@ -67,21 +67,16 @@ $(document).ready(function() {
 		opacity: 1
 	}, 1500);
 
-	//smooth scroll for a hrefs
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
+	$('a[href*=#]').bind('click', function(e) {
+	    e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
+	       
+	    var target = $(this).attr("href"); //Get the target
+	            
+	    // perform animated scrolling by getting top-position of target-element and set it as scroll target
+	    $('html, body').stop().animate({ scrollTop: $(target).offset().top }, 1000);
+            
+    	return false;
+  	});
 
 	//pirallax
 	$(window).bind('scroll',function(e){

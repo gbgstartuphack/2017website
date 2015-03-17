@@ -1366,6 +1366,9 @@ a:hover {
       -webkit-transform: translateY(-5%);
           -ms-transform: translateY(-5%);
               transform: translateY(-5%); }
+  @media screen and (max-width: 480px) {
+    .the-day .hack-background {
+      content: url(../../build/images/the-hack-background-mobile.jpg); } }
   .the-day h1 {
     position: relative;
     margin-top: 0;
@@ -1376,7 +1379,7 @@ a:hover {
   .the-day .ghost-btn {
     display: inline-block;
     vertical-align: top;
-    margin: 0 1em 0 1em;
+    margin: 0 1em 1.5em 1em;
     width: 16em;
     max-width: 80vw;
     padding-left: 0;
@@ -1462,6 +1465,12 @@ p {
     display: table; }
   [role="banner"]:after {
     clear: both; }
+  @media screen and (max-width: 480px) {
+    [role="banner"] {
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/header-background-mobile.jpg) no-repeat fixed;
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/header-background-mobile.jpg) no-repeat fixed;
+      background-size: cover;
+      background-position: center center; } }
   [role="banner"] .header {
     position: relative;
     top: 50%;
@@ -1666,6 +1675,11 @@ footer {
     display: table; }
   .sign-up:after {
     clear: both; }
+  @media screen and (max-width: 480px) {
+    .sign-up {
+      background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent), url(../../build/images/sign-up-background-mobile.jpg) no-repeat center center;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), transparent), url(../../build/images/sign-up-background-mobile.jpg) no-repeat center center;
+      background-size: cover; } }
   .sign-up .location-right {
     width: 90vw;
     margin: 5vw;
@@ -1705,6 +1719,12 @@ footer {
   width: 100vw;
   height: auto;
   display: inline-block; }
+  @media screen and (max-width: 480px) {
+    .location {
+      background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background-mobile.jpg");
+      background: linear-gradient(-90deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background-mobile.jpg");
+      background-size: cover;
+      background-position: center center; } }
   .location .location-left {
     width: 90vw;
     margin: 5vw;
