@@ -79,9 +79,14 @@ $(document).ready(function() {
   	});
 
 	//pirallax
-	$(window).bind('scroll',function(e){
-   		parallaxScroll();
-   	});
+	if (window.innerWidth >= 480) {
+		$(window).bind('scroll',function(e){
+	   		parallaxScroll();
+	   	});
+	}
+	else {
+		$('.ocean-break img').css('left', '15vw');
+	}
 
    	function parallaxScroll(){
    		yStart = $('.ocean-break').offset().top - $(window).scrollTop();
