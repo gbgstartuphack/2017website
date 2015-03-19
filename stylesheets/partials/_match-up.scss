@@ -2,13 +2,13 @@
 	@include clearfix;
   color: white;
 	background-color: $base-background-color;
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../../build/images/matchup-background.jpg) no-repeat center center;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/matchup-background.jpg) no-repeat center center;
 	background-size: cover;
 	width: 100vw;
 	text-align: center;
 	margin-top: -5px;
 	@include media($mobile) {
-		background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
 		background-size: cover;
 	}
 
@@ -21,12 +21,13 @@
     width: 35vw;
   }
 
-  .fuck-it {
+  .match-up-links {
     display: inline-block;
 
 		a {
+			transition: 0.5s;
 			text-decoration: none;
-			opacity: 0.8;
+			opacity: 0.6;
 		}
 
 		a:hover {

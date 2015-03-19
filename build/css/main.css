@@ -1317,16 +1317,57 @@ a:hover {
     width: 100%;
     height: 100%; }
 
-.intro h1 {
-  padding-top: 1em; }
-.intro p:last-child {
-  padding-bottom: 8em; }
-.intro a:hover {
-  text-decoration: none; }
-.intro a:hover > span {
-  text-decoration: underline; }
-.intro .icon-hashtag {
-  font-size: 0.8em; }
+.intro {
+  text-align: center; }
+  .intro h1 {
+    padding-top: 1em; }
+  .intro p:last-child {
+    padding-bottom: 8em; }
+  .intro a:hover {
+    text-decoration: none; }
+  .intro a:hover > span {
+    text-decoration: underline; }
+  .intro .icon-hashtag {
+    font-size: 0.8em; }
+  .intro .ghost-btn {
+    -webkit-transition: 0.5s;
+            transition: 0.5s;
+    background-color: black;
+    margin-bottom: 4em;
+    opacity: 0.7;
+    max-width: 98vw; }
+    @media screen and (max-width: 480px) {
+      .intro .ghost-btn {
+        white-space: normal; } }
+    .intro .ghost-btn .email-form {
+      overflow: hidden;
+      border-bottom: 1px solid #fff; }
+    .intro .ghost-btn .input-container {
+      text-align: top; }
+      .intro .ghost-btn .input-container .email {
+        width: 69%;
+        margin-right: -5px;
+        padding-left: 10px; }
+        @media screen and (max-width: 480px) {
+          .intro .ghost-btn .input-container .email {
+            width: 100%; } }
+      .intro .ghost-btn .input-container .subscribe-btn {
+        width: 30%; }
+        @media screen and (max-width: 480px) {
+          .intro .ghost-btn .input-container .subscribe-btn {
+            width: 100%; } }
+      .intro .ghost-btn .input-container input {
+        -webkit-transition: 0.5s;
+                transition: 0.5s;
+        border: none;
+        height: 2em;
+        background: black;
+        color: white;
+        outline: none; }
+    .intro .ghost-btn .hide-sub {
+      display: none; }
+  .intro .ghost-btn:hover {
+    opacity: 1; }
 
 .info p {
   text-align: left; }
@@ -1727,8 +1768,8 @@ footer {
 .match-up {
   color: white;
   background-color: #fdfdfd;
-  background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.4), transparent), url(../../build/images/matchup-background.jpg) no-repeat center center;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), transparent), url(../../build/images/matchup-background.jpg) no-repeat center center;
+  background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/matchup-background.jpg) no-repeat center center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/matchup-background.jpg) no-repeat center center;
   background-size: cover;
   width: 100vw;
   text-align: center;
@@ -1740,19 +1781,21 @@ footer {
     clear: both; }
   @media screen and (max-width: 480px) {
     .match-up {
-      background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
-      background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), transparent), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
+      background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
       background-size: cover; } }
   .match-up .location-left {
     width: 35vw; }
   .match-up .location-right {
     width: 35vw; }
-  .match-up .fuck-it {
+  .match-up .match-up-links {
     display: inline-block; }
-    .match-up .fuck-it a {
+    .match-up .match-up-links a {
+      -webkit-transition: 0.5s;
+              transition: 0.5s;
       text-decoration: none;
-      opacity: 0.8; }
-    .match-up .fuck-it a:hover {
+      opacity: 0.6; }
+    .match-up .match-up-links a:hover {
       opacity: 1; }
   .match-up i {
     font-size: 100px; }

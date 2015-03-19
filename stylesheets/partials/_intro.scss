@@ -1,4 +1,5 @@
 .intro {
+  text-align: center;
 
   h1 {
     padding-top: 1em;
@@ -15,5 +16,56 @@
   }
   .icon-hashtag {
     font-size: 0.8em;
+  }
+
+  .ghost-btn {
+    transition: 0.5s;
+    background-color: black;
+    margin-bottom: 4em;
+    opacity: 0.7;
+    max-width: 98vw;
+    @include media($mobile) {
+      white-space: normal;
+    }
+
+    .email-form {
+      overflow: hidden;
+      border-bottom: 1px solid #fff;
+    }
+
+    .input-container {
+      text-align: top;
+      .email {
+        width: 69%;
+        margin-right: -5px;
+        padding-left: 10px;
+        @include media($mobile) {
+          width: 100%;
+        }
+      }
+
+      .subscribe-btn {
+        width: 30%;
+        @include media($mobile) {
+          width: 100%;
+        }
+      }
+
+      input {
+        transition: 0.5s;
+        border: none;
+        height: 2em;
+        background: black;
+        color: white;
+        outline: none;
+      }
+    }
+
+    .hide-sub {
+      display: none;
+    }
+  }
+  .ghost-btn:hover {
+    opacity: 1;
   }
 }

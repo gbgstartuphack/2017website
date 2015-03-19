@@ -49,6 +49,11 @@ function fixFloat(elem) {
 	}
 }
 
+function validateEmail(email) {
+	var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(email);
+}
+
 var stats;
 $(document).ready(function() {
 	//animate header
@@ -60,7 +65,7 @@ $(document).ready(function() {
 		left: 0,
 		opacity: 1
 	}, 1000);
-	$('.ghost-btn').animate({
+	$('.header-btn').animate({
 		opacity: 1
 	}, 1500);
 	$('.header-info').animate({
@@ -77,6 +82,34 @@ $(document).ready(function() {
             
     	return false;
   	});
+
+	var flag = true;
+	$('.mail-button').on('click', function() {
+		$(this).css('opacity', 1);
+		$(this).find('span').text('');
+		$('.hide-sub').toggleClass('hide-sub');
+		$('.email').focus();
+		if (flag) {
+			$('.email-form').css('width', '1px');
+			$('.email-form').animate({
+				width: '100%'
+			}, 500);
+			flag = false;
+		}
+	});
+
+	$('.subscribe-btn').on('click', function() {
+		setTimeout(function() {
+			if ($('.email').hasClass('valid')) {
+				$('.mail-button, .email, .subscribe-btn').css('background', '#0D6759');
+				$('.email-form').toggleClass('hide-sub');
+				$('.mail-button').find('span').text('Check mail for confirmation!');
+			}
+			else if ($('.email').hasClass('mce_inline_error')) {
+				$('.mail-button, .email, .subscribe-btn').css('background', '#692528');
+			}
+		}, 100);
+	});
 
 	//pirallax
 	if (window.innerWidth >= 480) {
