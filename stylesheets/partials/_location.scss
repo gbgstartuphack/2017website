@@ -35,4 +35,10 @@
 			width: 200px;
 		}
 	}
+	.location-left {
+		@include media($mobile) {
+		    width: 100vw;
+		    margin-right: 0;
+		}
+	}
 }

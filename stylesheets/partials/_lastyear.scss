@@ -1,19 +1,16 @@
 .last-year {
 	position: relative;
-	h1, h2 {
-		width: 100vw;
-		padding: 1em 10%;
-		font-size: 3em;
-		margin: 0;
-		@include media($mobile) {
-			font-size: 2em;
-		}
-	}
-	h2 {
-		font-size: 2em;
-		float: left;
-		padding: 2em 10%;
-	}
+	// h1, h2 {
+	// 	width: 100vw;
+	// 	padding: 1em 10%;
+	// 	font-size: 3em;
+	// 	margin: 0;
+	// }
+	// h2 {
+	// 	font-size: 2em;
+	// 	float: left;
+	// 	padding: 2em 10%;
+	// }
 	.last-year-grid {
 		color: $header-light-color;
 		width: 100vw;
@@ -38,6 +35,9 @@
 				h3 {
 					font-size: 7vw;
 					margin: 0;
+					@include media($mobile) {
+						font-size: 3em;
+					}
 					//Color palette: Hymn_For_My_Soul
 					// &:nth-child(1) {
 					// 	color: #7AB317;
@@ -55,6 +55,9 @@
 				h4 {
 					// float: left;
 					font-size: 1.5vw;
+					@include media($mobile) {
+						font-size: 1em;
+					}
 				}
 			}
 		}

@@ -11,23 +11,6 @@
 		background-size: cover;
 	}
 
-
-	h1 {
-		// vertical-align: middle;
-		// display: inline-block;
-		// color: $base-text-color;
-		margin: 0;
-		// padding: 3em 1em;
-		@include media($mobile) {
-			font-size: 2em;
-		}
-		@include media($mobile-wide) {
-			font-size: 3em;
-		}
-		@include media($tablet) {
-			font-size: 5em;
-		}
-	}
 	p {
 		margin: 0 15% $lineheight;
 	}
@@ -41,29 +24,11 @@
 	a:hover>span {
 		text-decoration: underline;
 	}
+
+	.location-right {
+		@include media($mobile) {
+			    width: 100vw;
+			    margin-left: 0;
+		}
+	}
 }
-
-
-
-// .sign-up:hover h1{
-// 	animation: heartbeat 1.5s linear infinite;
-// }
-
-// @keyframes heartbeat {
-//     5% {
-//     	transform: scale(1.02, 1.02);
-//     }
-
-//     15% {
-//     	transform: scale(1.01, 1.01);
-//     }
-
-//     20% {
-//     	transform: scale(1.02, 1.02);
-//     }
-
-//     35% {
-//     	transform: scale(1, 1);
-//     }
-// }
-//

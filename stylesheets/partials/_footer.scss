@@ -28,6 +28,10 @@ footer {
     h3 {
       display: inline-block;
       margin: 0 30px;
+      @include media($mobile) {
+        width: 100vw;
+        margin: 0;
+      }
     }
     i {
       vertical-align: middle;
