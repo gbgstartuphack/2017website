@@ -1319,6 +1319,9 @@ a:hover {
 
 .intro {
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .intro p {
+      text-align: left; } }
   .intro h1 {
     padding-top: 1em; }
   .intro p:last-child {
@@ -1744,6 +1747,10 @@ footer {
       background-size: cover; } }
   .sign-up p {
     margin: 0 15% 1.33333em; }
+    @media screen and (max-width: 480px) {
+      .sign-up p {
+        text-align: left;
+        margin: 0 10% 1.33333em; } }
   .sign-up i {
     font-size: 2em;
     vertical-align: middle; }
@@ -1775,6 +1782,11 @@ footer {
       background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
       background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
       background-size: cover; } }
+  @media screen and (max-width: 480px) and (max-width: 480px) {
+    .match-up p {
+      text-align: left;
+      margin: 0 10% 1.33333em; } }
+
   .match-up .location-left {
     width: 35vw; }
   .match-up .location-right {
@@ -1805,7 +1817,10 @@ footer {
       background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background-mobile.jpg");
       background: linear-gradient(-90deg, rgba(0, 0, 0, 0.6), transparent), url("../../build/images/location-background-mobile.jpg");
       background-size: cover;
-      background-position: center center; } }
+      background-position: center center; }
+      .location p {
+        text-align: left;
+        margin: 0 10% 1.33333em; } }
   .location a:hover {
     text-decoration: none; }
   .location a:hover > span {

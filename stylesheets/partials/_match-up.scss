@@ -10,6 +10,12 @@
 	@include media($mobile) {
 		background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../build/images/matchup-background-mobile.jpg) no-repeat center center;
 		background-size: cover;
+		@include media($mobile) {
+			p {
+				text-align: left;
+	  			margin: 0 10% $lineheight;
+			}
+		}
 	}
 
   .location-left {

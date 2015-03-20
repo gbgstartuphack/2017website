@@ -93,7 +93,7 @@ $(document).ready(function() {
 			$('.email-form').css('width', '1px');
 			$('.email-form').animate({
 				width: '100%'
-			}, 500);
+			}, 200);
 			flag = false;
 		}
 	});

@@ -1,5 +1,11 @@
 .intro {
   text-align: center;
+  
+  p {
+    @include media($mobile) {
+      text-align: left;
+    }
+  }
 
   h1 {
     padding-top: 1em;
