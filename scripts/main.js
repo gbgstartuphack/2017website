@@ -99,11 +99,13 @@ $(document).ready(function() {
 	});
 
 	$('.subscribe-btn').on('click', function() {
+		var lengthOfSub = $('.mail-button').css('width');
 		setTimeout(function() {
 			if ($('.email').hasClass('valid')) {
 				$('.mail-button, .email, .subscribe-btn').css('background', '#0D6759');
 				$('.email-form').toggleClass('hide-sub');
 				$('.mail-button').find('span').text('Check mail for confirmation!');
+				$('.mail-button').css('width', lengthOfSub);
 			}
 			else if ($('.email').hasClass('mce_inline_error')) {
 				$('.mail-button, .email, .subscribe-btn').css('background', '#692528');

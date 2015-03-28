@@ -30,8 +30,10 @@
     margin-bottom: 4em;
     opacity: 0.7;
     max-width: 98vw;
+    height: 100px;
     @include media($mobile) {
       white-space: normal;
+      height: 150px;
     }
 
     .email-form {
@@ -42,7 +44,7 @@
     .input-container {
       text-align: top;
       .email {
-        width: 69%;
+        width: 70%;
         margin-right: -5px;
         padding-left: 10px;
         @include media($mobile) {
