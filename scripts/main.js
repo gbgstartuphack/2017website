@@ -74,12 +74,12 @@ $(document).ready(function() {
 
 	$('a[href*=#]').bind('click', function(e) {
 	    e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
-	       
+
 	    var target = $(this).attr("href"); //Get the target
-	            
+
 	    // perform animated scrolling by getting top-position of target-element and set it as scroll target
 	    $('html, body').stop().animate({ scrollTop: $(target).offset().top }, 1000);
-            
+
     	return false;
   	});
 
@@ -212,3 +212,25 @@ $(function () {
     },
     countdown.SECONDS);
 });
+
+
+// Easter egg :)
+
+var audioObject = new Audio('https://p.scdn.co/mp3-preview/2650c19280ca427c10e3bcb5ce5295f1ace84ce0');
+
+if (window.addEventListener) {
+  keys = [], code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+
+  window.addEventListener("keyup", function(e) {
+    keys.push(e.keyCode);
+    if (keys.length > code.length) {
+      keys.shift();
+    }
+
+    if (keys.length == code.length) {
+      if (keys.toString() == code.toString()) {
+        audioObject.play();
+      }
+    }
+  });
+}
