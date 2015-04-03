@@ -1540,6 +1540,13 @@ p {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center; } }
+  [role="banner"] .anchor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2em;
+    width: 24px;
+    height: 24px; }
   [role="banner"] .header {
     position: relative;
     top: 50%;

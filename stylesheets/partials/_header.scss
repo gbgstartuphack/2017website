@@ -24,7 +24,14 @@
     background-position: center center;
   }
 
-
+  .anchor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2em;
+    width: 24px;
+    height: 24px;
+  }
   .header {
     @include vertical-align;
     width: 100vw;

@@ -83,6 +83,47 @@ $(document).ready(function() {
     	return false;
   	});
 
+  	var headers = $('h1');
+  	$('.anchor').on('click', function () {
+  		var currentHeader;
+  		for (var i = 0; i<headers.length; i++) {
+  			currentHeader = headers.eq(i);
+  			console.log(currentHeader);
+  			switch (i) {
+  				case 0:
+  					currentHeader.html('Arrr, me hearties!');
+  					break;
+  				case 1:
+  					currentHeader.html("What ye be needin' to know!");
+  					break;
+  				case 2:
+  					currentHeader.html("But why is the rum gone?");
+  					break;
+  				case 3:
+  					currentHeader.html("Where we be settin' sail from.");
+  					break;
+  				case 4:
+  					currentHeader.html("Avast! Sign up 'ere!");
+  					break;
+  				case 5:
+  					currentHeader.html("Prepare to be boarded!");
+  					break;
+  				case 6:
+  					currentHeader.html("Jolly Roger's Crew.");
+  					break;
+  				case 7:
+  					currentHeader.html("The ol' seadogs.");
+  					break;
+  				case 8:
+  					currentHeader.html("In Davy Jones' Locker.");
+  					break;
+  				case 9:
+  					currentHeader.html("Landlubbers' Section.");
+  					break;
+  			}
+  		}
+  	});
+
 	var flag = true;
 	$('.mail-button').on('click', function() {
 		$(this).css('opacity', 1);
