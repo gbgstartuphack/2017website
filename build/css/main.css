@@ -1547,6 +1547,12 @@ p {
     margin: 2em;
     width: 24px;
     height: 24px; }
+    [role="banner"] .anchor:hover {
+      cursor: pointer; }
+  [role="banner"] .rotated {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
   [role="banner"] .header {
     position: relative;
     top: 50%;
@@ -1565,7 +1571,12 @@ p {
           width: 50%; } }
     [role="banner"] .header .header-info {
       opacity: 0;
-      font-size: 6vmin;
+      font-size: 5vmin;
+      font-weight: 300;
+      margin-top: 0;
+      margin-bottom: 1vh; }
+    [role="banner"] .header .header-date {
+      font-size: 5vmin;
       margin-top: 0;
       margin-bottom: 1vh; }
     [role="banner"] .header .ghost-btn {

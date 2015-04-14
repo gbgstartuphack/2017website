@@ -85,6 +85,9 @@ $(document).ready(function() {
 
   	var headers = $('h1');
   	$('.anchor').on('click', function () {
+      
+      $('.anchor').addClass('rotated');
+
   		var currentHeader;
   		for (var i = 0; i<headers.length; i++) {
   			currentHeader = headers.eq(i);
