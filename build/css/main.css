@@ -1582,9 +1582,9 @@ p {
       margin-bottom: 1vh; }
     [role="banner"] .header .ghost-btn {
       opacity: 0;
-      padding: 2vmin 4vmin;
+      padding: 3vmin 6vmin;
       font-size: 3vmin;
-      cursor: default; }
+      cursor: pointer; }
       [role="banner"] .header .ghost-btn:hover {
         -webkit-transition: 0.5s;
                 transition: 0.5s;

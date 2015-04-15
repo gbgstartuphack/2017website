@@ -71,7 +71,10 @@ $(document).ready(function() {
 	$('.header-info').animate({
 		opacity: 1
 	}, 1500);
-  $('.header-date').animate({
+  	$('.header-date').animate({
+		opacity: 1
+	}, 1500);
+	$('.header-btn').animate({
 		opacity: 1
 	}, 1500);
 

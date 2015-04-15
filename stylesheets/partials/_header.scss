@@ -69,9 +69,9 @@
     }
     .ghost-btn {
       opacity: 0;
-      padding: 2vmin 4vmin;
+      padding: 3vmin 6vmin;
       font-size: 3vmin;
-      cursor: default;
+      cursor: pointer;
 
       &:hover { @include hover; }
     }
