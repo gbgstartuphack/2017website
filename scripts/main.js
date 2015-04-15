@@ -71,6 +71,9 @@ $(document).ready(function() {
 	$('.header-info').animate({
 		opacity: 1
 	}, 1500);
+  $('.header-date').animate({
+		opacity: 1
+	}, 1500);
 
 	$('a[href*=#]').bind('click', function(e) {
 	    e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
@@ -85,7 +88,7 @@ $(document).ready(function() {
 
   	var headers = $('h1');
   	$('.anchor').on('click', function () {
-      
+
       $('.anchor').addClass('rotated');
 
   		var currentHeader;

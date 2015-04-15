@@ -1576,6 +1576,7 @@ p {
       margin-top: 0;
       margin-bottom: 1vh; }
     [role="banner"] .header .header-date {
+      opacity: 0;
       font-size: 5vmin;
       margin-top: 0;
       margin-bottom: 1vh; }
