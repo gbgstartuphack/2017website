@@ -1783,6 +1783,11 @@ footer {
     .sign-up .location-right {
       width: 100vw;
       margin-left: 0; } }
+  .sign-up .ghost-btn:hover {
+    -webkit-transition: 0.5s;
+            transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.04); }
 
 .match-up {
   color: white;

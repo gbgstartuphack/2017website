@@ -35,4 +35,8 @@
 			    margin-left: 0;
 		}
 	}
+
+	.ghost-btn {
+		&:hover { @include hover; }
+	}
 }
