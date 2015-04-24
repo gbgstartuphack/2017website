@@ -76,4 +76,12 @@
   .ghost-btn:hover {
     opacity: 1;
   }
+
+  .inline {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .ml {
+    margin-left: 10px;
+  }
 }

@@ -1373,6 +1373,11 @@ a:hover {
       display: none; }
   .intro .ghost-btn:hover {
     opacity: 1; }
+  .intro .inline {
+    display: inline-block;
+    vertical-align: middle; }
+  .intro .ml {
+    margin-left: 10px; }
 
 .info p {
   text-align: left; }
