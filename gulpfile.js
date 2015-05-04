@@ -67,7 +67,8 @@ function notifyLiveReload(event) {
 gulp.task("images", function(){
   gulp.src(['res/images/*.jpg', 'res/images/*.png', 'res/images/**/*'])
     .pipe(images({
-      progressive: true
+      progressive: true,
+      cache: false
     }))
     .pipe(gulp.dest("build/images"));
 });
