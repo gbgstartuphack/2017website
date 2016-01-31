@@ -1210,6 +1210,8 @@ a:hover {
   margin: 0 20% 5vh; }
 .all h1 {
   margin: 0.4em 0; }
+.all blockquote {
+  margin-top: 0; }
 .all .a-hackathon {
   width: 70%;
   margin: auto;
@@ -1246,26 +1248,52 @@ a:hover {
   text-align: center; }
   .all .why-sponsor img {
     max-width: 50vw; }
-.all .sponsor-columns {
-  width: 70%;
-  margin: auto;
-  margin-left: 20%;
-  display: inline-block; }
-.all .columns-left {
-  width: 50%;
-  float: left; }
-.all .columns-right {
-  width: 50%;
-  float: right; }
-.all .flower {
-  width: 30%;
-  margin: auto; }
+.all section.sponsor-offer {
+  text-align: center; }
+  .all section.sponsor-offer .columns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 4em; }
+    .all section.sponsor-offer .columns .column {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: left;
+      margin: 1em; }
+  .all section.sponsor-offer h4 {
+    text-align: left; }
+  .all section.sponsor-offer .divider {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0; }
+  .all section.sponsor-offer table {
+    margin-left: 0.4em; }
+  .all section.sponsor-offer td {
+    padding: 0.2em 0; }
+  .all section.sponsor-offer td:last-child {
+    width: 25%; }
+  .all section.sponsor-offer td:first-child {
+    padding-right: 0.5em; }
+  .all section.sponsor-offer .single-column {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 6em; }
+  .all section.sponsor-offer .columns-left {
+    margin-left: 6em; }
+  .all section.sponsor-offer i.fine-text {
+    font-size: 0.8rem; }
 .all .seed {
-  width: 30%;
-  margin: auto;
   margin-bottom: 10vh; }
-  .all .seed p {
-    text-align: center; }
 .all .sponsor-us {
   width: 100%;
   background-color: #424242;
