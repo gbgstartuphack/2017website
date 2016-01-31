@@ -1,5 +1,5 @@
 .all {
-	
+
 	p {
 		text-align: justify;
 		margin: 0 20% 5vh;
@@ -31,6 +31,15 @@
 			}
 		}
 	}
+
+    .partner-btn {
+        border: 3px solid black;
+        border-radius: 30px;
+        font-size: 2rem;
+        padding: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 
 	.why-sponsor {
 		width: 70%;
@@ -82,7 +91,7 @@
 		}
 		h2 {
 			@media screen and (max-width: 700px) {
-				word-break: break-word;	
+				word-break: break-word;
 			}
 		}
 	}
@@ -91,7 +100,7 @@
 		h2 {
 			display: inline-block;
 			max-width: 20vw;
-			margin: 0 5vw 5vh; 
+			margin: 0 5vw 5vh;
 			img {
 				max-width: 100%;
 				max-height: 10vh;
@@ -132,7 +141,7 @@
 	}
 
 	.hackathon-intro {
-		margin-bottom: 5em;
+		margin-bottom: 3em;
 	}
 
 	.featured-in {
