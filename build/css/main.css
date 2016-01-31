@@ -1230,15 +1230,15 @@ a:hover {
   text-align: center; }
   .all .why-sponsor img {
     max-width: 50vw; }
-.all .garden-columns {
+.all .sponsor-columns {
   width: 70%;
   margin: auto;
   margin-left: 20%;
   display: inline-block; }
-.all .garden-left {
+.all .columns-left {
   width: 50%;
   float: left; }
-.all .garden-right {
+.all .columns-right {
   width: 50%;
   float: right; }
 .all .flower {
