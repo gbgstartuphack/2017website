@@ -1212,6 +1212,8 @@ a:hover {
   margin: 0.4em 0; }
 .all blockquote {
   margin-top: 0; }
+.all .hackathon-intro {
+  margin-bottom: 1em; }
 .all .a-hackathon {
   width: 70%;
   margin: auto;
@@ -1297,7 +1299,7 @@ a:hover {
 .all .sponsor-us {
   width: 100%;
   background-color: #424242;
-  color: #e1e1e1;
+  color: #fdfdfd;
   padding: 5em 25%; }
   .all .sponsor-us h1 {
     margin-top: 0; }
@@ -1316,15 +1318,15 @@ a:hover {
 .all .gradient-transition {
   height: 30px;
   width: 100%;
-  background: -webkit-linear-gradient(#FDFDFD, #FEFFFA);
-  background: linear-gradient(#FDFDFD, #FEFFFA);
+  background: -webkit-linear-gradient(#fdfdfd, #FDFEFC);
+  background: linear-gradient(#fdfdfd, #FDFEFC);
   text-align: left; }
   .all .gradient-transition h2 {
     display: block;
     width: 100%;
     text-align: left;
     font-size: 3vw;
-    color: #e1e1e1;
+    color: #fdfdfd;
     position: relative;
     top: 200px;
     margin: 5px 0; }
