@@ -1518,8 +1518,6 @@ a:hover {
     border: 3px solid rgba(255, 255, 255, 0.04); }
   .the-day .the-day-text {
     position: relative; }
-    .the-day .the-day-text:nth-child(even) {
-      position: absolute; }
     .the-day .the-day-text p {
       text-align: left; }
       @media screen and (min-width: 850px) {

@@ -74,16 +74,13 @@
 
   .the-day-text {
     position: relative;
-    &:nth-child(even) {
-      position: absolute;
-    }
     p {
       text-align: left;
       @include media($desktop){
         text-align: justify;
       }
     }
-    
+
   }
 
   .text-shown {
