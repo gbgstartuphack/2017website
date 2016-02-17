@@ -10,7 +10,7 @@ $white: #fdfdfd;
 	}
 
 	h1 {
-		margin: 0.4em 0;
+		margin: 0.3em 0;
 	}
 
 	blockquote {
@@ -19,6 +19,10 @@ $white: #fdfdfd;
 
 	.hackathon-intro {
 		margin-bottom: 1em;
+	}
+
+	.center {
+		text-align: center;
 	}
 
 	.a-hackathon {
@@ -50,20 +54,36 @@ $white: #fdfdfd;
 
   .partner-btn {
 		display: inline-block;
-    border: 3px solid $grey;
-   	color: $grey;
+    background-color: $grey;
+   	color: $white;
     border-radius: 30px;
     font-size: 2rem;
     padding: 1.5rem 3em;
     margin: 0.7em 0;
-    -webkit-transition: background-color $transition-time, color $transition-time;
-    transition: background-color $transition-time, color $transition-time;
+    -webkit-transition: background-color $transition-time;
+    transition: background-color $transition-time;
 
     &:hover {
     	text-decoration: none;
-    	background-color: $grey;
-    	color: $white;
+    	background-color: #5c5c5c;
     }
+  }
+
+  .news-articles {
+  	display: flex;
+  	justify-content: center;
+  	flex-wrap: wrap;
+  	align-items: center;
+
+  	a {
+  		display: inline-block;
+  		width: 40%;
+  		margin: 2em;
+
+  		img {
+  			max-width: 100%
+  		}
+  	}
   }
 
 	.why-sponsor {
@@ -90,8 +110,11 @@ $white: #fdfdfd;
 				text-align: left;
 				margin: 1em;
 
-
+				&:last-child {
+					  -webkit-padding-start: 0;
+				}
 			}
+
 		}
 
 		h4 {
