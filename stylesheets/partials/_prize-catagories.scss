@@ -1,0 +1,19 @@
+.prize-categories {
+	.categories {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.prize-category {
+			flex: 1;
+			padding: 1em;
+			min-width: 450px;
+			max-width: 450px;
+
+			p {
+				margin: 0 5%;
+			}
+
+		}
+	}
+}
