@@ -5,11 +5,12 @@
 		justify-content: center;
 		margin-left: 2em;
 		margin-right: 2em;
-
+        flex-wrap: wrap;
 
 		.juror {
 			flex: 1;
 			padding: 1em;
+            margin: 1em;
 			text-align: center;
 
 			.juror-img {
