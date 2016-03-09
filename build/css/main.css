@@ -2268,7 +2268,7 @@ footer {
         -ms-flex: 1;
             flex: 1;
     padding: 1em;
-    min-width: 450px;
+    min-width: 320px;
     max-width: 450px; }
     .prize-categories .categories .prize-category p {
       margin: 0 5%; }
