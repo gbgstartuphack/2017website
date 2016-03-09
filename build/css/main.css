@@ -1977,11 +1977,9 @@ footer {
     width: 90vw; }
     .partners .spotify p {
       margin-top: 2em; }
-  .partners .flower-all {
-    padding-top: 100px; }
-    @media screen and (max-width: 480px) {
-      .partners .flower-all {
-        padding-top: 0px; } }
+  @media screen and (max-width: 480px) {
+    .partners .flower-all {
+      padding-top: 0px; } }
   .partners .flower {
     vertical-align: top;
     display: inline-block;
