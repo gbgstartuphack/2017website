@@ -200,8 +200,8 @@ $(document).ready(function() {
    	});
 
    	//Both "the day" text at same place
-   	var text1y = $('.the-day-text:eq(0)').position().top;
-   	$('.the-day-text:eq(1)').css('top', text1y);
+   	var text1y = $('.the-day-text:eq(0)').height();
+   	$('.the-day-text:eq(1)').css('top', -text1y);
 
 	//change between hack and open track
   	$('.the-day .ghost-btn').click(function() {
@@ -212,6 +212,7 @@ $(document).ready(function() {
 			// $('.the-day').toggleClass('background-change');
 			$('.the-day>img').toggleClass('img-shown').toggleClass('img-not-shown');
 			$('.the-day-text').toggleClass('text-shown').toggleClass('text-not-shown');
+                        $('.startup-arena-text').toggleClass('text-not-shown').toggleClass('text-shown');
 			$('.the-day .ghost-btn').each(function () {
 				$(this).toggleClass('active');
 			});
