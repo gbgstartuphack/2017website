@@ -1710,6 +1710,11 @@ p {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     bottom: 4vh; }
+  [role="banner"] .gbgtechweek {
+    width: 15%;
+    position: absolute;
+    bottom: 1em;
+    right: 1em; }
 
 footer {
   margin: 0; }
