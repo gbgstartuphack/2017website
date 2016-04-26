@@ -2293,3 +2293,8 @@ footer {
     max-width: 450px; }
     .prize-categories .categories .prize-category p {
       margin: 0 5%; }
+
+.secondary h2 {
+  font-size: 22px; }
+.secondary p {
+  font-size: 15px; }
