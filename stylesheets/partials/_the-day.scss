@@ -18,6 +18,13 @@
     -moz-user-select: none;
     -webkit-user-drag: none;
     transition: transform 0.5s, opacity 0.5s;
+
+    &.lightbox-thumbnail {
+      min-width: initial;
+      height: 250px;
+      min-height: initial;
+      position: relative;
+    }
   }
   .img-shown {
     opacity: 1;

@@ -1534,6 +1534,11 @@ a:hover {
     -webkit-user-drag: none;
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
             transition: transform 0.5s, opacity 0.5s; }
+    .the-day img.lightbox-thumbnail {
+      min-width: initial;
+      height: 250px;
+      min-height: initial;
+      position: relative; }
   .the-day .img-shown {
     opacity: 1;
     top: 0; }

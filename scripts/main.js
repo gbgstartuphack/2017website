@@ -200,7 +200,7 @@ $(document).ready(function() {
    	});
 
    	//Both "the day" text at same place
-   	var text1y = $('.the-day-text:eq(0)').height();
+   	var text1y = $('.the-day-text').height();
    	$('.the-day-text:eq(1)').css('top', -text1y);
 
 	//change between hack and open track
