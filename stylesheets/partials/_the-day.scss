@@ -87,6 +87,9 @@
         text-align: justify;
       }
     }
+    &:last-child {
+
+    }
 
   }
 
@@ -95,6 +98,7 @@
     transition: transform 0.5s, opacity 0.5s;
   }
   .text-not-shown {
+    display: none;
     opacity: 0;
     &:nth-child(odd) {
       transform: translateX(-3%);
