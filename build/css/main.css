@@ -2278,6 +2278,9 @@ footer {
       margin: 0 5%;
       font-size: 15px; }
 
+.prize-category .prize-header h1 {
+  font-size: 2.75em;
+  margin-right: 0.3em; }
 .prize-category .prize-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2290,7 +2293,8 @@ footer {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding: 0 10%; }
   .prize-category .prize-content .prize-team-img img {
     max-width: 500px; }
   .prize-category .prize-content .prize-team-img .img-text {

@@ -1,9 +1,16 @@
 .prize-category {
 
+	.prize-header {
+		h1 {
+			font-size: 2.75em;
+			margin-right: 0.3em;
+		}
+	}
 	.prize-content {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 0 10%;
 
 		.prize-team-img {
 
