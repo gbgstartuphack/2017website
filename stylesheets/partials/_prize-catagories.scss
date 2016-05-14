@@ -9,13 +9,13 @@
 	.prize-content {
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		//align-items: center;
 		padding: 0 10%;
 
 		.prize-team-img {
 
 			img {
-				max-width: 500px;
+				width: 325px;
 			}
 
 			.img-text {
