@@ -2278,30 +2278,34 @@ footer {
       margin: 0 5%;
       font-size: 15px; }
 
-.prize-categories .categories {
+.prize-category .prize-content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-  .prize-categories .categories .prize-category {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 1em;
-    min-width: 320px;
-    max-width: 450px; }
-    .prize-categories .categories .prize-category p {
-      margin: 0 5%; }
-
-.secondary h2 {
-  font-size: 22px; }
-.secondary p {
-  font-size: 15px; }
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .prize-category .prize-content .prize-team-img img {
+    max-width: 500px; }
+  .prize-category .prize-content .prize-team-img .img-text {
+    margin: 0;
+    text-align: center;
+    font-size: 0.9rem; }
+  .prize-category .prize-content .prize-team-info {
+    text-align: center; }
+    .prize-category .prize-content .prize-team-info p {
+      margin: 1em 10%;
+      padding-bottom: 1em; }
+    .prize-category .prize-content .prize-team-info .prize-button {
+      color: white;
+      background: #4d4d4d;
+      padding: 1em;
+      border-radius: 10px; }
+      .prize-category .prize-content .prize-team-info .prize-button:hover {
+        background: #767676; }

@@ -1,27 +1,40 @@
-.prize-categories {
-	.categories {
+.prize-category {
+
+	.prize-content {
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
+		align-items: center;
 
-		.prize-category {
-			flex: 1;
-			padding: 1em;
-			min-width: 320px;
-			max-width: 450px;
+		.prize-team-img {
 
-			p {
-				margin: 0 5%;
+			img {
+				max-width: 500px;
 			}
 
+			.img-text {
+				margin: 0;
+    		text-align: center;
+    		font-size: 0.9rem;
+			}
 		}
-	}
-}
-.secondary {
-	h2 {
-		font-size: 22px;
-	}
-	p {
-		font-size: 15px;
+		.prize-team-info {
+			text-align: center;
+
+			p {
+				margin: 1em 10%;
+				padding-bottom: 1em;
+			}
+
+			.prize-button {
+				color: white;
+		    background: #4d4d4d;
+		    padding: 1em;
+		    border-radius: 10px;
+
+				&:hover {
+					background: rgb(118,118,118);
+				}    
+			}
+		}
 	}
 }
