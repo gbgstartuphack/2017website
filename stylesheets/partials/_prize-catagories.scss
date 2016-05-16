@@ -15,17 +15,22 @@
 		.prize-team-img {
 
 			img {
-				width: 325px;
+				width: 100%;
+				max-width: 325px;
+				flex-direction: column;
 			}
 
 			.img-text {
 				margin: 0;
-    		text-align: center;
-    		font-size: 0.9rem;
+    				text-align: center;
+    				font-size: 0.9rem;
+				flex-direction: column;
 			}
 		}
 		.prize-team-info {
 			text-align: center;
+			flex-direction: column;
+			max-width: 600px;
 
 			p {
 				margin: 1em 10%;

@@ -2292,13 +2292,30 @@ footer {
           justify-content: center;
   padding: 0 10%; }
   .prize-category .prize-content .prize-team-img img {
-    width: 325px; }
+    width: 100%;
+    max-width: 325px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .prize-category .prize-content .prize-team-img .img-text {
     margin: 0;
     text-align: center;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .prize-category .prize-content .prize-team-info {
-    text-align: center; }
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 600px; }
     .prize-category .prize-content .prize-team-info p {
       margin: 1em 10%;
       padding-bottom: 1em; }
