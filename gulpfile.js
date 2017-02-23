@@ -29,6 +29,7 @@ gulp.task('express', function() {
   var app = express();
   app.use(require('connect-livereload')({port: 4002}));
   app.use(express.static(__dirname));
+  console.log('App running frontend on port 4000\nLivereload on port 4002');
   app.listen(4000);
 });
 
