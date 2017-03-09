@@ -1794,6 +1794,21 @@ footer {
     margin: 4em auto;
     max-width: 10em;
     width: 50%; }
+  .standard-footer .ghost-btn {
+    -webkit-transition: 0.5s;
+            transition: 0.5s;
+    background-color: black;
+    margin-bottom: 3em;
+    margin-top: 2em;
+    opacity: 0.7;
+    max-width: 98vw;
+    height: 100px; }
+    @media screen and (max-width: 480px) {
+      .standard-footer .ghost-btn {
+        white-space: normal;
+        height: 150px; } }
+    .standard-footer .ghost-btn:hover {
+      opacity: 1; }
   .standard-footer p {
     font-size: 16px;
     text-align: center;

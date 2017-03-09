@@ -90,6 +90,24 @@ footer {
     width: 50%;
   }
 
+  .ghost-btn {
+    transition: 0.5s;
+    background-color: black;
+    margin-bottom: 3em;
+    margin-top: 2em;
+    opacity: 0.7;
+    max-width: 98vw;
+    height: 100px;
+    @include media($mobile) {
+      white-space: normal;
+      height: 150px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   p {
     font-size: $footer-font-size;
     text-align: center;
