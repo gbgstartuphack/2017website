@@ -1,7 +1,7 @@
 /* Modules & variables
 -------------------------------------*/
 var gulp          = require('gulp');
-    sass          = require('gulp-ruby-sass'),
+    sass          = require('gulp-sass'),
     autoprefixer  = require('gulp-autoprefixer'),
     minifycss     = require('gulp-minify-css'),
     rename        = require('gulp-rename'),
