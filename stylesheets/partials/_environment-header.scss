@@ -1,0 +1,97 @@
+[role="environmentbanner"] {
+    @include clearfix;
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+    ), url(../../forest.jpg) no-repeat fixed;
+    min-height: 100vh;
+    height: 1000vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    z-index: 6;
+  
+    color: $header-color;
+  
+    @include media($mobile) {
+      background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+      ), url(../../build/images/header-background-mobile.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+  
+    .anchor {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 2em;
+      width: 24px;
+      height: 24px;
+  
+      &:hover{
+        cursor:pointer;
+      }
+    }
+  
+    .rotated {
+      transform: rotate(180deg);
+    }
+  
+    .header {
+      @include vertical-align;
+      width: 100vw;
+      .header-logo {
+        width: 90%;
+        max-height: 40vh;
+        opacity: 0;
+        position: relative;
+        left: -5%;
+        @include media($desktop) {
+          width: 50%;
+        }
+      }
+      .header-info {
+        opacity: 0;
+        font-size: 5vmin;
+        font-weight: 300;
+        margin-top: 0;
+        margin-bottom: 1vh;
+      }
+      .header-date {
+        opacity: 0;
+        font-size: 5vmin;
+        margin-top: 0;
+        margin-bottom: 1vh;
+      }
+      .ghost-btn {
+        opacity: 0;
+        padding: 3vmin 6vmin;
+        font-size: 3vmin;
+        cursor: pointer;
+  
+        &:hover { @include hover; }
+      }
+  
+    }
+    .arrow {
+      width: 40px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 4vh;
+    }
+  
+    .gbgtechweek {
+      width: 15%;
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+    }
+  
+  }
+  
