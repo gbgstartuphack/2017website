@@ -33,10 +33,30 @@
 </head>
 <body>
   <header role="banner">
+    <div class="desktopnavbar">
+      <ul>
+          <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="index.html"><u>Home</u></a></li>
+          <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="partner.html">Partner</a></li>
+          <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="currenthack.html">This year</a></li>
+          <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="previoushacks.html">Previous hacks</a></li>
+      </ul>
+    </div>
+
+    <div class="mobilenavbar" id="header-navbar">
+        <a href="#home" class="active"></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="bannernavbar-inner" class="icon" onclick="toggleNavbar()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     <div class="header">
       <img class="header-logo" src="build/images/header-logo.svg">
-
-
       <h2 class="header-info">THINK - HACK - LAUNCH</h2>
       <br>
       <!-- <br>
@@ -54,8 +74,15 @@
       <!--<img src="build/images/Schema.svg" />-->
     <!--</section>-->
     <section class="intro" id="intro">
-      <h1>Covid-19</h1>
-      <p>As you can probably imagine, there will be no startup hack this spring. But we are working our hardest to be able to have a hackathon in 2020, whilst of course having the safety of everybody involved as our main concern and complying with current regulations. We monitor the situation closely, and when we know about the next hackathon we will let you know! We are doing everythin we can to hostt a hackathon as soon as we are allowed to. Stay safe and take care!
+      <h1>Off-season &amp; Back to reality</h1>
+      <p>Right now we're in the middle of the off-season in regards to the Startup Hack. Though, we're not staying idle.
+         On <b>October 2</b> we're hosting an event together with <b>Annevo</b>, with some nice food, drinks and interesting tech talks!
+      </p>
+      <p>
+         There are only a few spots left and it's free of charge, so hurry!
+         <a href="https://www.eventbrite.com/e/back-to-reality-with-gothenburg-startup-hack-tickets-71286396531">
+          Get your ticket here!
+        </a>
       </p>
       <button class="ghost-btn mail-button" id="subscribe-btn"><span>Click here to subscribe to our newsletter.</span>
         <div class="hide-sub email-form" id="mc_embed_signup">
@@ -72,6 +99,7 @@
     </section>
     <!--<section class="ocean-break">-->
     <!--</section>-->
+
 <section id="info" class="info">
       <h1>What is Gothenburg startup hack?</h1>
         <p>We believe in the power of creating things, and the power of startup culture! By bringing together developers, creative minds and businesses we host our awesome hackathon at a new cool venue each spring to raise the starup culture of Gothenburg to even higher peaks. Perhaps your idea and your team is the next big thing, join the hackathon and find out just how good your idea is! 
@@ -81,7 +109,23 @@
 
           
 
-    </section>
+
+    <!--  <p>We prefer <strong>fresh ideas</strong> and <strong>technological innovation</strong> over a solid business case. Don't worry about the numbers or the bottom line — use your imagination, think outside the box and go nuts!
+
+      <p><strong>This hack is about building stuff</strong> — a demo with just a PowerPoint presentation ain't gonna fly.
+
+      <p>We will be hosting a <strong>meetup April 3</strong> — where we'll all hang out and meet each other. Looking for a team or more team members? This is the right place to be! <a href="https://goo.gl/forms/qGsyvmu3F8CNjGmT2">Sign up for the meetup here</a>
+
+      <p>Once you have put together a versatile team, make sure to sign up before the application deadline — <strong><time datetime="2016-05-01">April 17</time></strong>.
+
+      <p>We think that the best teams are made up of people with <strong>different skills</strong> and <strong>different backgrounds</strong>.
+
+      <p>We recommend team sizes <strong>between 3 to 5 people</strong>.
+
+      <p>Finally, the hack takes place on <strong>May 11</strong>. Be prepared to hack from early in the morning 'til late in the evening.
+
+      <p>We will keep you comfortable and make sure you are fed all the way through.</p>
+    </section> -->
       <!--h1>The winners</h1>
 
       <p style='text-align: center'>We saw <strong>a lot</strong> of really goods hacks, and here are the ones who took home prizes!</p>
@@ -841,65 +885,44 @@ Tim joined Northzone in 2013. His primary areas of focus are ecommerce, consumer
         </div>
       </div>
     </section -->
-    
-    <section class="FAKK" id="FAKK">
-      <h1>Questions?</h1>
-      <div class="questions-container">
-        <div>
-          <h3>How do I keep up to date with information?</h3>
-          <p>Regularly check out this site, <a href="#subscribe-btn">subscribe to our newsletter</a> and stay up to date by keeping an eye on our <a href="http://twitter.com/gbgstartuphack">twitter</a> and <a href="https://www.facebook.com/gbgstartuphack">facebook</a>.</p>
+    <section id="last-year" class="last-year">
+      <h1>Memories ❤</h1>
+      <div class="last-year-grid">
+        <div class="content-holder">
+          <img src="build/images/lastyear1.jpg">
+          <div>
+            <h3>100</h3>
+            <h4>teams</h4>
+          </div>
         </div>
-        <div>
-          <h3>Can I sign up alone?</h3>
-          <p>Sorry, but no. A hackathon is about building cool things together. But why not bring your idea and find your team at <a href="https://www.facebook.com/events/1553463541601380/">the Meetup</a>? You can also let us match you <a href="https://docs.google.com/forms/d/17axlk7bDfYMOfK-FD9t-NWf-pkLHTW0HryGBrXLY3rY/viewform">right here</a>. Or you can head over to the <a href="https://www.facebook.com/groups/1399972033646075/">matchup space</a> and see if you can find people to team up with yourself.</p>
+        <div class="content-holder">
+          <img src="build/images/lastyear2.jpg">
+          <div>
+            <h3>400</h3>
+            <h4>hackers</h4>
+          </div>
         </div>
-        <div>
-          <h3>How large can our team be?</h3>
-          <p>At most 5 people, and you should be at least 2. We recommend being 4.</p>
+        <div class="content-holder">
+          <img src="build/images/lastyear3.jpg">
+          <div>
+            <h3>2</h3>
+            <h4>tents</h4>
+          </div>
         </div>
-        <div>
-          <h3>Where do I find team members?</h3>
-          <p>IRL, on the internet. Try using our hashtag <a href="https://twitter.com/search?q=%23gbgstartuphack&src=typd">#gbgstartuphack</a> when looking for prospective team members! You can also check out the <a href="https://www.facebook.com/groups/1937008329963081/">matchup space</a> or <a href="#signup">let us match you</a>.</p>
-        </div>
-        <div>
-          <h3>Do I get favored in the selection process if I sign up early?</h3>
-          <p>Nope. Just make sure you sign up before <strong>April 17</strong>.</p>
-        </div>
-        <div>
-          <h3>My idea and/or team has somehow changed since we entered our signup information, what do I do?</h3>
-          <p>Email us at <a href="mailto:info@gbgstartuphack.com">info@gbgstartuphack.com</a> and we’ll get back to you!</p>
-        </div>
-        <div>
-          <h3>Can we start hacking on our idea before the hack?</h3>
-          <p>Please use common sense; do not bring your startup’s finished product/prototype. Use this day to hack on the things you do not normally get time for.</p>
-        </div>
-        <div>
-          <h3>There’s no Facebook event for The Hack? Where and how do I sign up?</h3>
-	  <p><a href="https://www.facebook.com/events/412420009491820">There is one</a>, though attending the Facebook event doesn't give you an attendance spot. <a href="#sign-up">Sign up here</a> instead.</p>
-        </div>
-        <div>
-          <h3>Does the idea/prototype have to be strictly based on IT?</h3>
-          <p>This is a hackathon, so it should include hacking code in one way or the other. If you’re unsure if your idea fits the format, just <a href="mailto:info@gbgstartuphack.com">drop us an email.</a></p>
-        </div>
-        <div>
-          <h3>Do I need to be able to code in order to apply?</h3>
-          <p>Oh no! It's all about building a team which eventually will deliver something cool during the day.
-          Feel free to be the planning person in your group.</p>
-          <h4>A sample team</h4>
-          <p>A neat team compilation of four people consist of:</p>
-          <ul>
-            <li>Two developers</li>
-            <li>One designer</li>
-            <li>One <em>planning person</em> overseeing the progress, creating the presentation, engineering the
-            overall vision, and more.</li>
-          </ul>
-          <p>Or, why separate the roles?</p>
-          <ul>
-            <li>Three developers knowing design, or three designers who can code</li>
-            <li>One <em>planning person</em></li>
-          </ul>
+        <div class="content-holder">
+          <img src="build/images/lastyear4.jpg">
+          <div>
+            <h3>3</h3>
+            <h4>towers</h4>
+          </div>
         </div>
       </div>
+      <div class="wrapper">
+        <div class="video">
+          <iframe src="http://www.youtube.com/embed/SR9Cr6t8qmY"></iframe>
+        </div>
+      </div>
+      <!-- <h2>Join us this year and make <strong>new</strong> memories.</h2> -->
     </section>
   </main>
   <footer class="main-footer">

@@ -7,6 +7,29 @@
     </head>
     <body>
     <header role="environmentbanner">
+        <div class="desktopnavbar">
+            <ul>
+                <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="index.html">Home</a></li>
+                <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="partner.html">Partner</a></li>
+                <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="currenthack.html"><u>This year</u></a></li>
+                <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="previoushacks.html">Previous hacks</a></li>
+            </ul>
+          </div>
+      
+          <div class="mobilenavbar" id="header-navbar">
+              <a href="#home" class="active"></a>
+              <!-- Navigation links (hidden by default) -->
+              <div id="myLinks">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+              </div>
+              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+              <a href="javascript:void(0);" class="bannernavbar-inner" class="icon" onclick="toggleNavbar()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+
         <div class="header">
         <img class="header-logo" src="build/images/environment_colored.png">
         <br>

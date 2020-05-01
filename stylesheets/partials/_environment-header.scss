@@ -3,7 +3,7 @@
     background: linear-gradient(
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2)
-    ), url(../../forest.jpg) no-repeat fixed;
+    ), url(../../build/images/forest_new.jpg) no-repeat fixed;
     min-height: 100vh;
     height: 100vh;
     background-size: cover;
@@ -24,6 +24,57 @@
       background-size: cover;
       background-position: center center;
     }
+
+    @include media($desktop) {
+      .mobilenavbar {
+        display:none;
+      }
+      .desktopnavbar {
+        position: absolute;
+        z-index: 100;
+        right: 2%;
+        height:15%;
+        top:1%;
+        overflow: hidden;
+        color:white;
+      }
+  
+      .desktopnavbar-li {
+        display: inline;
+        color:white;
+        margin-left: 20px;
+      }
+  
+      .desktopnavbar-link {
+        color:white;
+        font-family: Pacifico;
+        font-size:35px;
+        font-weight: 50;
+      }
+    }
+  
+    @include media($mobile) {
+      .desktopnavbar {
+        display:none;
+      }
+      .mobilenavbar {
+        position: absolute;
+        right: 2%;
+        height:10%;
+        top:1%;
+        overflow: hidden;
+        color:white;
+      }
+  
+      .mobilenavbar #myLinks {
+        display: none;
+      }
+  
+      .mobilenavbar-inner {
+        color: white;
+      }
+    }
+
   
     .anchor {
       position: absolute;

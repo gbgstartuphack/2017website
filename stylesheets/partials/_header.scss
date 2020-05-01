@@ -25,6 +25,55 @@
     background-position: center center;
   }
 
+  @include media($desktop) {
+    .mobilenavbar {
+      display:none;
+    }
+    .desktopnavbar {
+      position: absolute;
+      right: 2%;
+      height:15%;
+      top:1%;
+      overflow: hidden;
+      color:white;
+    }
+
+    .desktopnavbar-li {
+      display: inline;
+      color:white;
+      margin-left: 20px;
+    }
+
+    .desktopnavbar-link {
+      color:white;
+      font-family: Pacifico;
+      font-size:35px;
+      font-weight: 50;
+    }
+  }
+
+  @include media($mobile) {
+    .desktopnavbar {
+      display:none;
+    }
+    .mobilenavbar {
+      position: absolute;
+      right: 2%;
+      height:10%;
+      top:1%;
+      overflow: hidden;
+      color:white;
+    }
+
+    .mobilenavbar #myLinks {
+      display: none;
+    }
+
+    .mobilenavbar-inner {
+      color: white;
+    }
+  }
+
   .anchor {
     position: absolute;
     top: 0;
