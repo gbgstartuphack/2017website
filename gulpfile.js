@@ -43,15 +43,14 @@ gulp.task('livereload', function() {
 
 //Styles
 gulp.task('styles', function() {
-  return sass(paths.scss)
-  .on('error', function(err){
-    console.error('Error!', err.message);
-  })
-  .pipe(autoprefixer())
-  .pipe(gulp.dest(paths.css))
-  .pipe(rename({suffix: '.min'}))
-  .pipe(minifycss())
-  .pipe(gulp.dest(paths.css));
+  return gulp.src(paths.scss)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest(paths.css))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(minifycss())
+    .pipe(gulp.dest(paths.css));
+  
 });
 
 function notifyLiveReload(event) {
