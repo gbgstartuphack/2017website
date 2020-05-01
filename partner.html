@@ -19,6 +19,30 @@
 </head>
 <body>
   <header role="banner">
+    <div class="desktopnavbar">
+      <ul>
+        <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="index.html">Home</a></li>
+        <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="partner.html"><u>Partner</u></a></li>
+        <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="currenthack.html">This year</a></li>
+        <li class="desktopnavbar-li"><a class="desktopnavbar-link" href="previoushacks.html">Previous hacks</a></li>
+      </ul>
+    </div>
+
+    <div class="mobilenavbar" id="header-navbar">
+        <a href="#home" class="active"></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="bannernavbar-inner" class="icon" onclick="toggleNavbar()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
     <div class="header">
       <img class="header-logo" src="build/images/header-logo.svg">
       <h2 class="header-info"><strong>Partnership Opportunities.</strong></h2>
@@ -137,6 +161,7 @@
                 <li>High five's from the organizers</li>
               </ul>
             </div>
+          </section>
 
       <h2>Previous hackathons</h2>
 
@@ -180,6 +205,14 @@
 
         <a target="_blank" title="InternetWorld" href="http://www.idg.se/2.1085/1.559073/bilden-av-goteborg-behover-forandras">
           <img src="build/images/press/internetworld.png" alt="InternetWorld" />
+        </a>
+
+        <a target="_blank" title="Swedish Startup Space" href="http://swedishstartupspace.com/2015/03/09/the-hack-is-back-on-a-boat/">
+          <img src="build/images/press/SSS-Logo-dark-1080x512.png" alt="Swedish Startup Space" />
+        </a>
+
+        <a target="_blank" title="ArcticStartup" href="http://www.arcticstartup.com/2014/05/06/hackathon-brings-together-gothenbergs-tech-community">
+          <img src="build/images/press/ArcticStartup banner.png" alt="ArcticStartup" />
         </a>
 
         <a target="_blank" title="Kodsnack" href="http://kodsnack.se/98/">
@@ -530,6 +563,8 @@
               <img src="http://guerillaoffice.com/wp-content/uploads/2014/04/GO-Gothenburg.png" alt="Guerrilla Office" />
             </a>
           </h2>
+
+
 
           <h2>
             <a href="http://www.cloetta.se/" title="Cloetta">
