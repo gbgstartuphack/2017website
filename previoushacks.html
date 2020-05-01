@@ -1,16 +1,85 @@
-
-  <html>
-    <head>
+ <html>
+     <head>
         <link href="http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:100,700,300,400,600" rel="stylesheet" />
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="build/css/main.min.css" />
         <link rel="stylesheet" type="text/css" href="build/css/lightbox.min.css">
     </head>
     <body>
-        <main>
-            <section class="intro" id="intro">
-                <p>Hello</p>
-            </section>
-        </main>
-    </body>
-</html>
+    <header role="environmentbanner">
+        <div class="header">
+        <img class="header-logo" src="build/images/environment_colored.png">
+        <br>
+        <!-- <br>
+        <h2 class="header-date"><strong>11 MAY<br/></strong></h2>
+        <h3 class="header-date">2019</h3> -->
+        <!-- <a href="https://forms.gle/8JSdidt5XhnJX7rK7"><button class="ghost-btn header-btn">Apply for the hack <strong>here</strong>.</button></a> -->
+        </div>
+        <a href="#intro"><img class="arrow" src="build/images/arrow-min.svg"></a>
+    </header>
+
+  <main>
+    <section class="intro" id="intro">
+      <h1>Previous hacks</h1>
+      </section>
+        <h1>2019</h1>
+        <img src="build/images/2019_1.jpg">
+      <section>
+
+      </section>
+        <h1>2018</h1>
+        <img src="build/images/2018_1.jpg">
+      <section>
+
+      </section>
+        <h1>2017</h1>
+        <img class="header-logo" src="build/images/2017_1.jpg">
+      <section>
+
+      </section>
+        <h1>2016</h1>
+        <img class="header-logo" src="build/images/2016_1.jpg">
+      <section>
+
+      </section>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="build/scripts/main.js"></script>
+  <script src="https://platform.twitter.com/widgets.js"></script>
+  <script src="scripts/vendor/countdown.min.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="scripts/vendor/jquery.magnific-popup.js"></script>
+  <!-- Mail Chimp -->
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <!-- ElevatorJS -->
+  <script type="text/javascript" src="scripts/vendor/elevator.min.js"></script>
+  <script>
+    window.onload = function() {
+      var elevator = new Elevator({
+        element: document.querySelector('.elevator-button'),
+        mainAudio: 'res/audio/elevator_music.mp3',
+        endAudio: 'res/audio/elevator_ding.mp3'
+      });
+    }
+  </script>
+
+  <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+  </script>
+  <!-- MyNewsDesk -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//www.mynewsdesk.com/javascripts/follow-button.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","mynewsdesk-fjs");
+  </script>
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47202681-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script type="text/javascript" src="scripts/lightbox.min.js"></script>
+  </body>
+ </html>

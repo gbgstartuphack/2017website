@@ -2281,7 +2281,7 @@ footer {
 [role="environmentbanner"] {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../forest.jpg) no-repeat fixed;
   min-height: 100vh;
-  height: 1000vh;
+  height: 100vh;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -2317,8 +2317,6 @@ footer {
     transform: translateY(-50%);
     width: 100vw; }
     [role="environmentbanner"] .header .header-logo {
-      width: 90%;
-      max-height: 40vh;
       opacity: 0;
       position: relative;
       left: -5%; }

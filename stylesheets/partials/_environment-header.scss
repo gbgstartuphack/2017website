@@ -5,7 +5,7 @@
     rgba(0, 0, 0, 0.2)
     ), url(../../forest.jpg) no-repeat fixed;
     min-height: 100vh;
-    height: 1000vh;
+    height: 100vh;
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -46,8 +46,6 @@
       @include vertical-align;
       width: 100vw;
       .header-logo {
-        width: 90%;
-        max-height: 40vh;
         opacity: 0;
         position: relative;
         left: -5%;

@@ -65,11 +65,11 @@ function notifyLiveReload(event) {
 
 // Image minifyer
 gulp.task("images", function(){
-  gulp.src(['res/images/*.jpg', 'res/images/*.png', 'res/images/**/*'])
-    .pipe(images({
+  gulp.src(['res/images/*.jpg', 'res/images/*.png','res/images/**/*'])
+    /*.pipe(images({
       progressive: true,
       cache: false
-    }))
+    }))*/
     .pipe(gulp.dest("build/images"));
 });
 
