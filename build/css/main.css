@@ -2237,8 +2237,6 @@ footer {
         text-align: left;
         margin: 0;
         font-size: 0.9em; }
-      .FAKK .questions-container div a {
-        color: #fdfdfd; }
     .FAKK .questions-container div:nth-child(odd) {
       float: left;
       margin-right: 50%; }
@@ -2421,3 +2419,10 @@ footer {
     position: absolute;
     bottom: 1em;
     right: 1em; }
+
+.card {
+  background: #fafafa;
+  box-shadow: 0 2px 20px rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 2em 3em;
+  color: #424242; }
