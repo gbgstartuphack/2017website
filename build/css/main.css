@@ -1886,13 +1886,37 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%; }
+        width: 400px;
+        height: 400px; }
 
 .last-year:after {
   content: '';
   display: block;
   clear: both; }
+
+.wrapper-test {
+  display: grid;
+  margin: auto;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  margin-right: 15%;
+  margin-left: 15%;
+  background: rgba(114, 186, 94, 0.05); }
+
+.last-year-image {
+  width: 400px;
+  height: 400px; }
+
+.box-test {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%; }
 
 .sign-up {
   background-color: #fdfdfd;
@@ -2419,10 +2443,3 @@ footer {
     position: absolute;
     bottom: 1em;
     right: 1em; }
-
-.card {
-  background: #fafafa;
-  box-shadow: 0 2px 20px rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  padding: 2em 3em;
-  color: #424242; }
